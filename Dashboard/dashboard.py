@@ -6,8 +6,8 @@ import streamlit as st
 sns.set_theme(style='dark')
 
 def load_data():
-    df_day = pd.read_csv("clean_day.csv")
-    df_hour = pd.read_csv("clean_hour.csv")
+    df_day = pd.read_csv("Dashboard/clean_day.csv")
+    df_hour = pd.read_csv("Dashboard/clean_hour.csv")
     
     df_day["dteday"] = pd.to_datetime(df_day["dteday"])
     df_hour["dteday"] = pd.to_datetime(df_hour["dteday"])
